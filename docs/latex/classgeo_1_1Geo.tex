@@ -1,0 +1,160 @@
+\hypertarget{classgeo_1_1Geo}{
+\section{geo::Geo Class Reference}
+\label{classgeo_1_1Geo}\index{geo::Geo@{geo::Geo}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgeo_1_1Geo_a05c4775ff1361a93243f7a4af5322f09}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classgeo_1_1Geo_a33eddcd1d8d9c50218da0d4af9c18647}{distance\_\-haversine}
+\item 
+def \hyperlink{classgeo_1_1Geo_a6c1debeb7971d51ddd7d0d9bdbd4427c}{distance\_\-sloc}
+\item 
+def \hyperlink{classgeo_1_1Geo_ae565566c5d90208ea5f67656f52d0092}{initial\_\-bearing}
+\item 
+def \hyperlink{classgeo_1_1Geo_a14e0f58bfe4e3a6f06fcf3491213dbaf}{final\_\-bearing}
+\item 
+def \hyperlink{classgeo_1_1Geo_a01bb745c04b570ee52b9c464cc5e2f82}{midpoint}
+\item 
+def \hyperlink{classgeo_1_1Geo_a186e47d14da8b081664a5ae701db494c}{intersection}
+\item 
+def \hyperlink{classgeo_1_1Geo_aa7a656b695ac9938e4064a32df34ca4b}{rhumb\_\-distance}
+\item 
+def \hyperlink{classgeo_1_1Geo_a694ce89fb8fc71fa670bf10a7aed202a}{rhumb\_\-bearing}
+\item 
+def \hyperlink{classgeo_1_1Geo_a8a38f7e50bce307533860ad569530478}{rhumb\_\-destination\_\-point}
+\item 
+def \hyperlink{classgeo_1_1Geo_acaad81d93d99d1193ed36fb229ccfe35}{rhumb\_\-midpoint}
+\item 
+def \hyperlink{classgeo_1_1Geo_a5b6b3ddad6ac576c393336349530bccf}{destination\_\-point}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Geo class provides a set of methods to calculating some geo-based parameters using 
+    Python's built-in math library.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgeo_1_1Geo_a05c4775ff1361a93243f7a4af5322f09}{
+\index{geo::Geo@{geo::Geo}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!geo::Geo@{geo::Geo}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::\_\-\_\-init\_\-\_\- ( {\em self})}}
+\label{classgeo_1_1Geo_a05c4775ff1361a93243f7a4af5322f09}
+\begin{DoxyVerb}
+Constructor
+\end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_a5b6b3ddad6ac576c393336349530bccf}{
+\index{geo::Geo@{geo::Geo}!destination\_\-point@{destination\_\-point}}
+\index{destination\_\-point@{destination\_\-point}!geo::Geo@{geo::Geo}}
+\subsubsection[{destination\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::destination\_\-point ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em brng}, \/   {\em dist})}}
+\label{classgeo_1_1Geo_a5b6b3ddad6ac576c393336349530bccf}
+\begin{DoxyVerb}@brief Returns the destination point from source point.
+    @param {lat1/lon1} float: Latitude/Longitude of source point.
+    @param brng float: Initial bearing in degrees.
+    @param dist float: Distance in km.
+    @return {lat2/lon2} float: Destination point.\end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_a33eddcd1d8d9c50218da0d4af9c18647}{
+\index{geo::Geo@{geo::Geo}!distance\_\-haversine@{distance\_\-haversine}}
+\index{distance\_\-haversine@{distance\_\-haversine}!geo::Geo@{geo::Geo}}
+\subsubsection[{distance\_\-haversine}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::distance\_\-haversine ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em lat2}, \/   {\em lon2})}}
+\label{classgeo_1_1Geo_a33eddcd1d8d9c50218da0d4af9c18647}
+\begin{DoxyVerb}@brief Compute distance between two points in km using haversine formula.
+    @param {lat1/lon1} float: Source point.
+    @param {lat2/lon2} float: Destination point.
+    @return float Distance between source and destination point. \end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_a6c1debeb7971d51ddd7d0d9bdbd4427c}{
+\index{geo::Geo@{geo::Geo}!distance\_\-sloc@{distance\_\-sloc}}
+\index{distance\_\-sloc@{distance\_\-sloc}!geo::Geo@{geo::Geo}}
+\subsubsection[{distance\_\-sloc}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::distance\_\-sloc ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em lat2}, \/   {\em lon2})}}
+\label{classgeo_1_1Geo_a6c1debeb7971d51ddd7d0d9bdbd4427c}
+\begin{DoxyVerb}@brief Compute distance between two points in km using
+    spherical law of cosines formula.
+    @param {lat1/lon1} float: Source point.
+    @param {lat2/lon2} float: Destination point.
+    @return float Distance between source and destination point. \end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_a14e0f58bfe4e3a6f06fcf3491213dbaf}{
+\index{geo::Geo@{geo::Geo}!final\_\-bearing@{final\_\-bearing}}
+\index{final\_\-bearing@{final\_\-bearing}!geo::Geo@{geo::Geo}}
+\subsubsection[{final\_\-bearing}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::final\_\-bearing ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em lat2}, \/   {\em lon2})}}
+\label{classgeo_1_1Geo_a14e0f58bfe4e3a6f06fcf3491213dbaf}
+\begin{DoxyVerb}@brief Bearing from one point to another in degrees (0-360).
+    @param {lat1/lon1} float: Source point.
+    @param {lat2/lon2} float: Destination point.
+    @return float Final bearing between two points.\end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_ae565566c5d90208ea5f67656f52d0092}{
+\index{geo::Geo@{geo::Geo}!initial\_\-bearing@{initial\_\-bearing}}
+\index{initial\_\-bearing@{initial\_\-bearing}!geo::Geo@{geo::Geo}}
+\subsubsection[{initial\_\-bearing}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::initial\_\-bearing ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em lat2}, \/   {\em lon2})}}
+\label{classgeo_1_1Geo_ae565566c5d90208ea5f67656f52d0092}
+\begin{DoxyVerb}@brief Bearing from one point to another in degrees (0-360).
+    @param {lat1/lon1} float: Source point.
+    @param {lat2/lon2} float: Destination point.
+    @return float Initial bearing between two points.\end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_a186e47d14da8b081664a5ae701db494c}{
+\index{geo::Geo@{geo::Geo}!intersection@{intersection}}
+\index{intersection@{intersection}!geo::Geo@{geo::Geo}}
+\subsubsection[{intersection}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::intersection ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em brng1}, \/   {\em lat2}, \/   {\em lon2}, \/   {\em brng2})}}
+\label{classgeo_1_1Geo_a186e47d14da8b081664a5ae701db494c}
+\begin{DoxyVerb}@brief Intersection of two paths given start points and bearings.
+    @param {lat1/lon1} float: Source point.
+    @param brng1 float: Initial bearing from source point.
+    @param {lat2/lon2} float: Destination point.
+    @param brng2 float: Initial bearing from destination point.
+    @return {lat3/lon3} float: Point of intersection of two path defined by point and bearing.\end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_a01bb745c04b570ee52b9c464cc5e2f82}{
+\index{geo::Geo@{geo::Geo}!midpoint@{midpoint}}
+\index{midpoint@{midpoint}!geo::Geo@{geo::Geo}}
+\subsubsection[{midpoint}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::midpoint ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em lat2}, \/   {\em lon2})}}
+\label{classgeo_1_1Geo_a01bb745c04b570ee52b9c464cc5e2f82}
+\begin{DoxyVerb}@brief This is the half-way point along a great circle
+    path between the two points.
+    @param {lat1/lon1} float: Source point.
+    @param {lat2/lon2} float: Destination point.
+    @return {lat3/lon3} float: Midpoint coordinates.\end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_a694ce89fb8fc71fa670bf10a7aed202a}{
+\index{geo::Geo@{geo::Geo}!rhumb\_\-bearing@{rhumb\_\-bearing}}
+\index{rhumb\_\-bearing@{rhumb\_\-bearing}!geo::Geo@{geo::Geo}}
+\subsubsection[{rhumb\_\-bearing}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::rhumb\_\-bearing ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em lat2}, \/   {\em lon2})}}
+\label{classgeo_1_1Geo_a694ce89fb8fc71fa670bf10a7aed202a}
+\begin{DoxyVerb}@brief Returns the bearing from this point to the supplied point along rhumb line, in degrees.
+    @param {lat1/lon1} float: Coordinates of source point.
+    @param {lat2/lon2} float: Coordinates of destination point.
+    @return float: Bearing in degrees from North.\end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_a8a38f7e50bce307533860ad569530478}{
+\index{geo::Geo@{geo::Geo}!rhumb\_\-destination\_\-point@{rhumb\_\-destination\_\-point}}
+\index{rhumb\_\-destination\_\-point@{rhumb\_\-destination\_\-point}!geo::Geo@{geo::Geo}}
+\subsubsection[{rhumb\_\-destination\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::rhumb\_\-destination\_\-point ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em brng}, \/   {\em dist})}}
+\label{classgeo_1_1Geo_a8a38f7e50bce307533860ad569530478}
+\begin{DoxyVerb}@brief Returns the destination point from this point having traveled the given
+    distance (in km) on the given bearing along a rhumb line.
+    @param lat1/lon1 float: Latitude/longitude of source point.
+    @param brng float: Bearing in degrees from North.
+    @param dist float: Distance in km.
+    @return {Lat/Lon} float Destination point.\end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_aa7a656b695ac9938e4064a32df34ca4b}{
+\index{geo::Geo@{geo::Geo}!rhumb\_\-distance@{rhumb\_\-distance}}
+\index{rhumb\_\-distance@{rhumb\_\-distance}!geo::Geo@{geo::Geo}}
+\subsubsection[{rhumb\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::rhumb\_\-distance ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em lat2}, \/   {\em lon2})}}
+\label{classgeo_1_1Geo_aa7a656b695ac9938e4064a32df34ca4b}
+\begin{DoxyVerb}@brief Returns the distance from point to the supplied point, 
+    in km, traveling along a rhumb line.
+    @param {lat1/lon1} float: Source point.
+    @param {lat2/lon2} float: Destination point
+    @return distance float: Returns distance traveling along rhumb line.\end{DoxyVerb}
+ \hypertarget{classgeo_1_1Geo_acaad81d93d99d1193ed36fb229ccfe35}{
+\index{geo::Geo@{geo::Geo}!rhumb\_\-midpoint@{rhumb\_\-midpoint}}
+\index{rhumb\_\-midpoint@{rhumb\_\-midpoint}!geo::Geo@{geo::Geo}}
+\subsubsection[{rhumb\_\-midpoint}]{\setlength{\rightskip}{0pt plus 5cm}def geo::Geo::rhumb\_\-midpoint ( {\em self}, \/   {\em lat1}, \/   {\em lon1}, \/   {\em lat2}, \/   {\em lon2})}}
+\label{classgeo_1_1Geo_acaad81d93d99d1193ed36fb229ccfe35}
+\begin{DoxyVerb}@brief Returns the loxodromic midpoint (along a rhumb line) between 
+    this point and the supplied point.
+    @param {lat1/lon1} float: Source point.
+    @param {lat2/lon2} float: Destination point.
+    @return {Lat/Lon} float: Midpoint between this point and the supplied point.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+geo.py\end{DoxyCompactItemize}
