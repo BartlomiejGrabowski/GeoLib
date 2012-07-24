@@ -8,7 +8,7 @@ Created on Jul 19, 2012
 '''
 import math
 import sys
-import os
+
 
 class LatitudeRangeException(Exception):
     """Raises when latitude is not in the range (-90, +90)."""
